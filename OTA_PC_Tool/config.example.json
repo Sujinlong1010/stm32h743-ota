@@ -1,0 +1,34 @@
+{
+  "_说明": "配置模板。复制为 config.json 后填入自己的 OneNET 参数：cp config.example.json config.json。config.json 含设备密钥，已被 .gitignore 排除。也可以直接启动上位机，在「OneNET 云端」页填写并保存，程序会自动生成 config.json。",
+
+  "product_id": "000000",
+  "device_name": "your_device",
+  "device_id": "",
+  "device_key": "",
+  "access_key": "",
+  "esp32_token": "",
+
+  "api_base": "https://iot-api.heclouds.com",
+  "command_path": "/v1/synccmds",
+  "token_method": "sha1",
+  "token_scope": "device",
+  "token_sign_order": "et_method_res_version",
+  "version": "2.0.0",
+
+  "channel": "prop",
+  "cloud_chunk_size": 360,
+  "cloud_interval": 0.05,
+  "cloud_cmd_timeout": 8,
+
+  "fw_a": "",
+  "fw_b": "",
+  "firmware": "",
+  "target_slot": 1,
+
+  "port": "COM3",
+  "baud": 921600,
+  "chunk_size": 512,
+  "ack_timeout": 1.5,
+  "retry": 3,
+  "final_timeout": 30.0
+}

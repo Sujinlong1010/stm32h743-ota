@@ -1,0 +1,17 @@
+# 默认让 git 自动判断文本文件，仓库内存 LF，检出时按下面的规则
+* text=auto
+
+# Windows 脚本必须是 CRLF，否则 cmd.exe / PowerShell 5.1 可能解析异常
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+*.ps1   text eol=crlf
+*.vbs   text eol=crlf
+
+# Keil 工程文件是 XML，Keil 自己按 CRLF 写回；保持一致避免每次改配置都产生大 diff
+*.uvprojx text eol=crlf
+*.uvoptx  text eol=crlf
+*.sct     text eol=crlf
+*.ioc     text eol=crlf
+
+# 汇编启动文件保持原样
+*.s     text eol=crlf
